@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Heroes of JavaScript and HTML</title>
+    <style>
+        #root {
+            width: 960px;
+            margin: 0 auto;
+            font-size: 18px;
+            background-color: #ccc;
+            padding: 15px 0 0 0;
+        }
+
+        .header {
+            font-size: 1.7em;
+            text-align: center;
+        }
+
+        .description {
+            margin: 15px 45px;
+            background-color: rgba(102, 102, 102, 0.8);
+            padding: 25px 55px;
+            border-radius: 15px;
+            border: 3px solid #fff;
+        }
+
+        .remark {
+            text-align: center;
+        }
+
+        .container {
+            padding: 15px;
+        }
+
+        .heroes-list {
+            list-style-type: none;
+        }
+
+        .heroes-list .hero-item {
+            display: inline-block;
+            width: 24%;
+        }
+
+        .heroes-list .hero-item h2 {
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        .heroes-list .hero-item .description {
+            position: relative;
+            margin: 0;
+            font-size: 1.1em;
+            background-color: rgba(102, 102, 102, 0.8);
+            height: 200px;
+            text-align: justify;
+            padding: 15px;
+            z-index: 999;
+            border-radius: 5px;
+        }
+
+        .heroes-list .hero-item img {
+            position: relative;
+            left: -40px;
+            top: -80px;
+            width: 200px;
+            height: 200px;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <h1 class="header">Heroes of JavaScript and HTML</h1>
+        <p class="description">
+            <strong>Heroes of JavaScript and HTML</strong> is a "Heroes of Might and Magic"-like game, but for code nerds.
+            Each hero has its unique coding abilities and based on them he can develop software applications.
+        </p>
+        <div class="container">
+            <p class="remark">Currently the game has only four hero types:</p>
+            <ul class="heroes-list">
+                <li class="hero-item">
+                    <h2>Front-end Developer</h2>
+                    <p class="description">
+                        Being the ultra masters of JavaScript, the order of the <strong>Front-enders</strong> is known to
+                        create user interfaces, that fill the users with absolute pleasure
+                    </p>
+                    <img src="imgs/fe.png" alt="">
+                </li>
+                <li class="hero-item">
+                    <h2>Mobile Developer</h2>
+                    <p class="description">
+                        The movement of the <strong>Mobile developers</strong> is brand new, yet in their short time they
+                        already manage to amaze the peoples of the worlds and beyond with create applications.
+                    </p>
+                    <img src="imgs/mobile.jpg" alt="">
+                </li>
+                <li class="hero-item">
+                    <h2>Web Developer</h2>
+                    <p class="description">
+                        The sect of the <strong>Web developers</strong> is the oldest there is. They prefer the old ways and rarely move to modern stuff. The Old Religion gives them power of small gods.
+                    </p>
+                    <img src="imgs/web.jpg" alt="">
+                </li>
+                <li class="hero-item">
+                    <h2>QA Engineer</h2>
+                    <p class="description">
+                        The <strong>QAs</strong> are the desiders of fates! They always have the final word, and all gods and mortals are bound to obey them.
+                    </p>
+                    <img src="imgs/qa.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

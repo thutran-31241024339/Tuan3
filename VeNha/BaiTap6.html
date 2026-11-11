@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Học web chuẩn</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .portfolio {
+            width: 1110px;
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        .portfolio h2 {
+            font-size: 30px;
+            font-weight: bold;
+            color: #222;
+            padding-bottom: 18px;
+            margin-bottom: 35px;
+            position: relative;
+        }
+
+        .portfolio h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 3px;
+            background-color: #399;
+        }
+
+        .portfolio .list-tab {
+            list-style: none;
+            margin-bottom: 40px;
+        }
+
+        .portfolio .list-tab li {
+            display: inline-block;
+            margin: 0 14px;
+        }
+
+        .portfolio .list-tab li a {
+            color: #444;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .portfolio .list-tab li:first-child a,
+        .portfolio .list-tab li a:hover {
+            color: #399;
+        }
+
+        .portfolio .galerry {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 15px;
+        }
+
+        .portfolio .galerry li {
+            width: 345px;
+            margin-bottom: 22px;
+        }
+
+        .portfolio .galerry li img {
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <section class="portfolio">
+        <h2>MY PORTFOLIO</h2>
+        <ul class="list-tab">
+            <li><a href="./">All</a></li>
+            <li><a href="./">Web App</a></li>
+            <li><a href="./">UI/UX</a></li>
+            <li><a href="./">Graphics Design</a></li>
+            <li><a href="./">Mobile App</a></li>
+            <li><a href="./">Branding</a></li>
+            <li><a href="./">Marketing</a></li>
+        </ul>
+        <ul class="galerry">
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" onerror="this.onerror=null;this.src='imgs/img_350x260.png';" alt=""></a></li>
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" onerror="this.onerror=null;this.src='imgs/img_350x260.png';" alt=""></a></li>
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" onerror="this.onerror=null;this.src='imgs/img_350x260.png';" alt=""></a></li>
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" onerror="this.onerror=null;this.src='imgs/img_350x260.png';" alt=""></a></li>
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" onerror="this.onerror=null;this.src='imgs/img_350x260.png';" alt=""></a></li>
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" onerror="this.onerror=null;this.src='imgs/img_350x260.png';" alt=""></a></li>
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" onerror="this.onerror=null;this.src='imgs/img_350x260.png';" alt=""></a></li>
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" onerror="this.onerror=null;this.src='imgs/img_350x260.png';" alt=""></a></li>
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" onerror="this.onerror=null;this.src='imgs/img_350x260.png';" alt=""></a></li>
+        </ul>
+    </section>
+</body>
+</html>
