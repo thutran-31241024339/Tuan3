@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 09 - JavaScript 2: DOM and Events</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="sub-header">
+        <div class="container">
+            <div class="breadcrumb-nav">
+                <a href="../index.html">&larr; Trang chủ JavaScript-Labs</a>
+                <span>/</span>
+                <strong>Lab 09</strong>
+            </div>
+            <h1>Lab 09 &ndash; JavaScript 2: DOM and Events</h1>
+            <p class="subtitle">Truy xuất và thay đổi cây DOM, tạo/xóa phần tử HTML, xử lý sự kiện người dùng, debug bằng DevTools và kiểm tra hợp lệ biểu mẫu (Form Validation).</p>
+        </div>
+    </header>
+
+    <main class="container section">
+        <div class="lab-grid">
+            <article class="ex-card">
+                <span class="ex-badge">Exercise 9.1</span>
+                <h3>Basic DOM Selection</h3>
+                <p>Truy xuất phần tử qua <code>getElementById</code>, <code>getElementsByTagName</code>, <code>getElementsByClassName</code>, <code>querySelectorAll</code> và đổi nội dung/style.</p>
+                <div class="card-actions">
+                    <a class="btn-primary" href="lab09-walkthrough01.html" target="_blank">Bản hoàn chỉnh</a>
+                    <a class="btn-secondary" href="lab09-exercise01-visible.html" target="_blank">Xem #msgArea hiển thị</a>
+                </div>
+            </article>
+            <article class="ex-card">
+                <span class="ex-badge">Exercise 9.2</span>
+                <h3>DOM Family Relations</h3>
+                <p>Duyệt quan hệ cha-con trong cây DOM bằng <code>childNodes</code>, phân biệt <code>nodeType</code> và tô nền xanh cho các node phần tử.</p>
+                <a class="btn-primary" href="lab09-walkthrough02.html" target="_blank">Mở bài thực hành</a>
+            </article>
+            <article class="ex-card">
+                <span class="ex-badge">Exercise 9.3</span>
+                <h3>Modifying the DOM</h3>
+                <p>Tạo mới phần tử với <code>createElement</code>, <code>createTextNode</code>, chèn bằng <code>appendChild</code> và xóa phần tử bằng <code>removeChild</code>.</p>
+                <a class="btn-primary" href="lab09-walkthrough03.html" target="_blank">Mở bài thực hành</a>
+            </article>
+            <article class="ex-card">
+                <span class="ex-badge">Exercise 9.4</span>
+                <h3>Simple Event Handling</h3>
+                <p>Xử lý sự kiện <code>click</code> (ẩn/hiện đoạn văn kèm hiệu ứng CSS và <code>setTimeout</code>), <code>mouseover</code> và <code>mouseout</code> trên hình ảnh.</p>
+                <a class="btn-primary" href="lab09-walkthrough04.html" target="_blank">Mở bài thực hành</a>
+            </article>
+            <article class="ex-card">
+                <span class="ex-badge">Exercise 9.5</span>
+                <h3>Responding to Load Events</h3>
+                <p>Sử dụng sự kiện <code>window.addEventListener("load", ...)</code> để đảm bảo toàn bộ cây DOM đã tải xong trước khi truy xuất <code>#div1</code>.</p>
+                <a class="btn-primary" href="lab09-exercise05.html" target="_blank">Mở bài thực hành</a>
+            </article>
+            <article class="ex-card">
+                <span class="ex-badge">Exercise 9.6</span>
+                <h3>Debugging Events</h3>
+                <p>Gắn sự kiện <code>mouseover</code> cho danh sách <code>.movingDiv</code>, sử dụng đối tượng <code>e.target.id</code> và đặt Breakpoint trong DevTools Sources.</p>
+                <a class="btn-primary" href="lab09-walkthrough05.html" target="_blank">Mở bài thực hành</a>
+            </article>
+            <article class="ex-card">
+                <span class="ex-badge">Exercise 9.7</span>
+                <h3>Working with Forms</h3>
+                <p>Lắng nghe sự kiện <code>focus</code> và <code>blur</code> trên các ô nhập liệu <code>input</code> để tự động tô màu nền làm nổi bật trường đang nhập.</p>
+                <a class="btn-primary" href="lab09-walkthrough07.html" target="_blank">Mở bài thực hành</a>
+            </article>
+            <article class="ex-card">
+                <span class="ex-badge">Exercise 9.8</span>
+                <h3>Form Validation</h3>
+                <p>Chặn gửi biểu mẫu bằng <code>e.preventDefault()</code> khi thiếu dữ liệu bắt buộc và xuất thông báo lỗi cụ thể vào khối <code>#errors</code>.</p>
+                <a class="btn-primary" href="lab09-walkthrough08.html" target="_blank">Mở bài thực hành</a>
+            </article>
+        </div>
+    </main>
+
+    <footer class="sub-footer">
+        <div class="container">
+            <a href="../Lab08/index.html">&larr; Trước đó: Lab 08</a> &bull;
+            <a href="../index.html">Trang chủ</a> &bull;
+            <a href="../Lab10/index.html">Tiếp theo: Lab 10 (jQuery) &rarr;</a>
+        </div>
+    </footer>
+</body>
+</html>
