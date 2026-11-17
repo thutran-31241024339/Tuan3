@@ -1,0 +1,8 @@
+/* Lab 09 - Exercise 9.2: DOM Family Relations */
+var stories = document.getElementById("stories");
+for (var i = 0; i < stories.childNodes.length; i++) {
+    console.log("child " + i + " =" + stories.childNodes[i] + " nodeType=" + stories.childNodes[i].nodeType);
+    if (stories.childNodes[i].nodeType === 1) {
+        stories.childNodes[i].style.backgroundColor = "green";
+    }
+}
