@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Labs Portfolio - Trần Ngọc Kim Thư (31241024339)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="topbar">
+        <div class="container topbar-inner">
+            <a class="brand" href="#top">JavaScript-Labs &bull; UEH TMĐT</a>
+            <div class="nav-links">
+                <a href="#gioi-thieu">Giới thiệu</a>
+                <a href="#danh-sach-lab">Danh sách Lab</a>
+                <a href="#kien-thuc">Kiến thức</a>
+                <a href="#tu-danh-gia">Tự đánh giá</a>
+                <a href="#demo-tmdt">Demo TMĐT</a>
+                <button type="button" id="themeToggle" class="theme-btn">Chế độ tối</button>
+            </div>
+        </div>
+    </nav>
+
+    <header id="top" class="hero">
+        <div class="container hero-grid">
+            <div class="avatar-wrap">
+                <img class="avatar" src="images/avatar.png" alt="Ảnh đại diện Trần Ngọc Kim Thư">
+            </div>
+            <div>
+                <span class="hero-badge">Chương 4: JavaScript &bull; Thực hành cá nhân</span>
+                <h1>Portfolio Bài Thực Hành JavaScript (Lab 08 &ndash; Lab 10)</h1>
+                <div class="student-meta">
+                    <div><strong>Sinh viên:</strong> Trần Ngọc Kim Thư</div>
+                    <div><strong>MSSV:</strong> 31241024339</div>
+                    <div><strong>Lớp học phần:</strong> Phát triển ứng dụng TMĐT</div>
+                    <div><strong>Email:</strong> thutran.31241024339@st.ueh.edu.vn</div>
+                </div>
+                <div class="hero-actions">
+                    <a class="btn-hero" href="https://github.com/thutran-31241024339" target="_blank">GitHub Cá nhân</a>
+                    <a class="btn-hero outline" href="https://github.com/thutran-31241024339/Tuan3" target="_blank">Repository Tuan3</a>
+                    <a class="btn-hero outline" href="../VeNha/index.html">Bài thực hành CSS trước đó</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container section">
+        <!-- 3.2 Giới thiệu về bài thực hành -->
+        <section id="gioi-thieu" class="section-card">
+            <h2 class="section-title">1. Giới thiệu về bài thực hành</h2>
+            <p>
+                Bộ bài thực hành <strong>Chương 4: JavaScript</strong> gồm 03 bài Lab trọng tâm (<strong>Lab 08</strong>, <strong>Lab 09</strong> và <strong>Lab 10</strong>) nhằm giúp sinh viên nắm vững từ nền tảng ngôn ngữ lập trình JavaScript thuần cho đến khả năng tương tác linh hoạt với cây DOM, xử lý sự kiện người dùng, xây dựng hiệu ứng giao diện bằng thư viện jQuery và trao đổi dữ liệu bất đồng bộ qua AJAX.
+            </p>
+            <p style="margin-top: 10px;">
+                Trong phát triển ứng dụng web hiện đại nói chung và website <strong>Thương mại điện tử</strong> nói riêng, JavaScript đóng vai trò cốt lõi phía trình duyệt (client-side): giúp kiểm tra tính hợp lệ của biểu mẫu đăng ký/đặt hàng trước khi gửi lên máy chủ, cập nhật động giỏ hàng và giá tiền theo thời gian thực, tạo hiệu ứng xem trước sản phẩm trực quan và tải dữ liệu danh mục mượt mà không cần tải lại toàn bộ trang web.
+            </p>
+        </section>
+
+        <!-- 3.3 Danh sách và liên kết đến các bài Lab -->
+        <section id="danh-sach-lab" class="section-card">
+            <h2 class="section-title">2. Danh sách và liên kết đến các bài Lab</h2>
+            <div class="table-wrap">
+                <table class="lab-table">
+                    <thead>
+                        <tr>
+                            <th>Bài Lab</th>
+                            <th>Nội dung</th>
+                            <th>Số lượng bài tập</th>
+                            <th>Truy cập nhanh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Lab 08</strong></td>
+                            <td>JavaScript 1: Language Foundations</td>
+                            <td>11 Exercise + Bài mở rộng</td>
+                            <td><a class="btn-primary" href="Lab08/index.html">Mở trang Lab 08</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lab 09</strong></td>
+                            <td>JavaScript 2: DOM and Events</td>
+                            <td>8 Exercise (9.1 &ndash; 9.8)</td>
+                            <td><a class="btn-primary" href="Lab09/index.html">Mở trang Lab 09</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lab 10</strong></td>
+                            <td>JavaScript 3: jQuery</td>
+                            <td>10 Exercise (10.1 &ndash; 10.10)</td>
+                            <td><a class="btn-primary" href="Lab10/index.html">Mở trang Lab 10</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="filter-bar">
+                <div class="filter-tabs" role="tablist" aria-label="Lọc theo bài Lab">
+                    <button type="button" class="filter-btn active" data-lab="ALL">Tất cả (30 bài)</button>
+                    <button type="button" class="filter-btn" data-lab="Lab08">Lab 08</button>
+                    <button type="button" class="filter-btn" data-lab="Lab09">Lab 09</button>
+                    <button type="button" class="filter-btn" data-lab="Lab10">Lab 10</button>
+                </div>
+                <input type="search" id="exerciseSearch" class="search-input" placeholder="Tìm nhanh Exercise (vd: Form, Animation, GET)...">
+            </div>
+
+            <div id="exerciseGrid" class="lab-grid"></div>
+        </section>
+
+        <!-- 3.4 Những kiến thức và kỹ năng đã học được -->
+        <section id="kien-thuc" class="section-card">
+            <h2 class="section-title">3. Những kiến thức và kỹ năng đã học được</h2>
+            <div class="knowledge-grid">
+                <article class="knowledge-box">
+                    <h3>Lab 08 &ndash; JavaScript 1: Language Foundations</h3>
+                    <ul>
+                        <li>Biết cách kiểm tra trạng thái JavaScript của trình duyệt, nhúng mã nội tuyến trong HTML, tách file <code>.js</code> ngoài gọn gàng và bổ sung thẻ <code>&lt;noscript&gt;</code> dự phòng.</li>
+                        <li>Sử dụng thành thạo biến cục bộ/toàn cục (<code>var</code>), phân biệt so sánh giá trị (<code>==</code>) và so sánh nghiêm ngặt cả kiểu dữ liệu (<code>===</code>) giữa chuỗi nguyên thủy và đối tượng <code>String</code>.</li>
+                        <li>Ứng dụng đối tượng dựng sẵn (<code>Date</code>, <code>Math</code>), thao tác mảng (<code>push</code>, <code>unshift</code>) kết hợp điều kiện và vòng lặp tạo bảng lịch.</li>
+                        <li>Tổ chức mã thành các hàm có tham số, truyền hàm ẩn danh làm đối số tính thuế, xây dựng hàm khởi tạo (constructor) cho đối tượng đơn hàng/quốc gia và duyệt thuộc tính bằng <code>for...in</code>.</li>
+                        <li>Sử dụng Browser Console (<code>console.log</code>, <code>warn</code>, <code>error</code>) để phát hiện lỗi cú pháp và kiểm tra giá trị biến trực tiếp.</li>
+                    </ul>
+                </article>
+                <article class="knowledge-box">
+                    <h3>Lab 09 &ndash; JavaScript 2: DOM and Events</h3>
+                    <ul>
+                        <li>Truy xuất chính xác phần tử trên trang web thông qua ID, tên thẻ, tên lớp và bộ chọn CSS linh hoạt (<code>querySelector</code>, <code>querySelectorAll</code>).</li>
+                        <li>Đọc và cập nhật nội dung (<code>innerHTML</code>, <code>innerText</code>, <code>value</code>), thuộc tính và kiểu dáng CSS trực tiếp qua DOM thay cho <code>document.write()</code>.</li>
+                        <li>Duyệt quan hệ nút trong cây DOM (<code>childNodes</code>, <code>nodeType</code>), tạo phần tử mới bằng <code>createElement</code>/<code>appendChild</code> và gỡ bỏ phần tử bằng <code>removeChild</code>.</li>
+                        <li>Thiết lập bộ lắng nghe sự kiện chuẩn bằng <code>addEventListener</code> cho các tương tác <code>click</code>, <code>mouseover</code>, <code>mouseout</code>, <code>load</code>, <code>focus</code> và <code>blur</code>.</li>
+                        <li>Xây dựng kiểm tra hợp lệ dữ liệu biểu mẫu (Form Validation) với <code>e.preventDefault()</code> và đặt Breakpoint trong DevTools Sources để gỡ lỗi sự kiện.</li>
+                    </ul>
+                </article>
+                <article class="knowledge-box">
+                    <h3>Lab 10 &ndash; JavaScript 3: jQuery</h3>
+                    <ul>
+                        <li>Tích hợp thư viện jQuery từ CDN kết hợp cơ chế tự động chuyển về bản lưu nội bộ (fallback) khi mất kết nối.</li>
+                        <li>Viết bộ chọn súc tích bằng <code>$()</code> cùng bộ chọn nâng cao (<code>:nth-child</code>, <code>:contains</code>) để định dạng nhiều phần tử cùng lúc mà không cần tự viết vòng lặp.</li>
+                        <li>Quản lý sự kiện tập trung qua <code>.on()</code> và gỡ bỏ sự kiện bằng <code>.off()</code> bên trong khối <code>$(function(){...})</code> sau khi DOM sẵn sàng.</li>
+                        <li>Thêm phần tử mới vào trang linh hoạt bằng <code>append</code>, <code>prepend</code>, <code>insertBefore</code> và thiết kế hiệu ứng <code>fadeIn/Out</code>, <code>slideUp/Down</code>, chuỗi <code>.animate()</code> hay khung phóng to ảnh theo chuột.</li>
+                        <li>Gửi truy vấn GET bất đồng bộ lấy dữ liệu JSON bằng <code>$.get()</code> và xử lý phản hồi an toàn thông qua đối tượng <code>jqXHR</code> (<code>.done</code>, <code>.fail</code>, <code>.always</code>).</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- 3.5 Tự đánh giá sau khi hoàn thành (100-150 từ) -->
+        <section id="tu-danh-gia" class="section-card">
+            <h2 class="section-title">4. Tự đánh giá sau khi hoàn thành</h2>
+            <div class="reflection-box">
+                <p>
+                    Qua ba bài Lab JavaScript, em đã nắm vững cú pháp nền tảng, thao tác cây DOM, bắt sự kiện người dùng, tạo hiệu ứng bằng jQuery và gọi dữ liệu bất đồng bộ qua AJAX. Lab 09 về DOM và Events mang lại nhiều giá trị thực tiễn nhưng cũng thử thách nhất ở bước kiểm soát thời điểm tải trang, xử lý Form Validation và đặt Breakpoint gỡ lỗi sự kiện. Những kỹ thuật này giúp em tự tin xây dựng nhiều tính năng thiết thực cho website thương mại điện tử như kiểm tra dữ liệu biểu mẫu đăng ký, cập nhật giỏ hàng và tính tổng tiền tự động, xem trước ảnh sản phẩm khi rê chuột cũng như nạp danh mục động qua JSON. Thời gian tới, em cần rèn luyện thêm cú pháp ES6 và Fetch API.
+                </p>
+            </div>
+        </section>
+
+        <!-- Widget tương tác ứng dụng TMĐT -->
+        <section id="demo-tmdt" class="section-card">
+            <h2 class="section-title">5. Ứng dụng thực tế TMĐT: Giỏ hàng &amp; Kiểm tra đơn hàng</h2>
+            <p style="margin-bottom: 16px; color: var(--text-muted);">
+                Khu vực minh họa vận dụng kiến thức tổng hợp từ Lab 08 (Object &amp; tính toán thuế), Lab 09 (DOM, Events &amp; Form Validation) ngay trên trang chủ:
+            </p>
+            <div class="ecom-grid">
+                <div>
+                    <div id="demoProducts" class="product-list"></div>
+                    <div class="cart-summary">
+                        <div>Tạm tính: <strong id="demoSubtotal">0 đ</strong></div>
+                        <div>Thuế VAT (8%): <strong id="demoVat">0 đ</strong></div>
+                        <div style="font-size: 1.08rem; margin-top: 4px; color: var(--primary);">
+                            Tổng thanh toán: <strong id="demoTotal">0 đ</strong>
+                        </div>
+                    </div>
+                </div>
+                <form id="demoOrderForm" class="checkout-form" novalidate>
+                    <div>
+                        <label for="custName">Họ tên người nhận</label>
+                        <input type="text" id="custName" placeholder="Ví dụ: Trần Ngọc Kim Thư">
+                    </div>
+                    <div>
+                        <label for="custEmail">Email xác nhận</label>
+                        <input type="email" id="custEmail" placeholder="name@st.ueh.edu.vn">
+                    </div>
+                    <div>
+                        <label for="custPhone">Số điện thoại</label>
+                        <input type="text" id="custPhone" placeholder="09xxxxxxxx">
+                    </div>
+                    <button type="submit" class="btn-primary">Kiểm tra &amp; Đặt hàng thử</button>
+                    <div id="demoFeedback" class="form-feedback"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p><strong>Trần Ngọc Kim Thư</strong> &ndash; MSSV: 31241024339 &bull; Học phần Phát triển ứng dụng TMĐT (UEH)</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
