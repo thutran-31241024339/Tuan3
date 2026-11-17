@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 10 - JavaScript 3: jQuery</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="sub-header">
+        <div class="container">
+            <div class="breadcrumb-nav">
+                <a href="../index.html">&larr; Trang chủ JavaScript-Labs</a>
+                <span>/</span>
+                <strong>Lab 10</strong>
+            </div>
+            <h1>Lab 10 &ndash; JavaScript 3: jQuery</h1>
+            <p class="subtitle">Cài đặt jQuery, sử dụng Basic/Advanced Selectors, xử lý sự kiện bằng <code>.on()</code>/<code>.off()</code>, thao tác DOM, hiệu ứng/hoạt ảnh và truy vấn bất đồng bộ GET/jqXHR.</p>
+        </div>
+    </header>
+
+    <main class="container section">
+        <div class="lab-grid">
+            <article class="ex-card">
+                <span class="ex-badge">Exercise 10.1</span>
+                <h3>Set Up jQuery</h3>
+                <p>Nhúng thư viện jQuery qua CDN HTTPS và kiểm tra cơ chế fallback về bản nội bộ <code>js/jquery-3.1.1.min.js</code>.</p>
+                <a class="btn-primary" href="lab10-exercise01.html" target="_blank">Mở bài thực hành</a>
+            </article>
+            <article class="ex-card">
+                <span class="ex-badge">Exercise 10.2</span>
+                <h3>Basic Selectors</h3>
+                <p>Sử dụng <code>$('#id')</code>, <code>$('tag')</code>, <code>$('.class')</code> cùng các phương thức <code>.val()</code>, <code>.html()</code>, <code>.attr()</code>, <code>.css()</code> và <code>.addClass()</code>.</p>
+                <a class="btn-primary" href="lab10-walkthrough01.html" target="_blank">Mở bài thực hành</a>
+            </article>
+            <article class="ex-card">
+                <span class="ex-badge">Exercise 10.3</span>
+                <h3>Advanced Selectors</h3>
+                <p>Áp dụng bộ chọn nâng cao <code>:nth-child(4n)</code> và <code>label:contains("word")</code> trên biểu mẫu đăng ký.</p>
+                <a class="btn-primary" href="lab10-walkthrough03.html" target="_blank">Mở bài thực hành</a>
+            </article>
+            <article class="ex-card">
+                <span class="ex-badge">Exercise 10.4</span>
+                <h3>jQuery Listeners</h3>
+                <p>Xâu chuỗi sự kiện <code>.on("mousemove")</code>, <code>.on("mouseleave")</code> và gỡ bỏ sự kiện bằng <code>.off("mousemove")</code> khi click.</p>
+                <a class="btn-primary" href="lab10-walkthrough04.html" target="_blank">Mở bài thực hành</a>
+            </article>
+            <article class="ex-card">
+                <span class="ex-badge">Exercise 10.5</span>
+                <h3>Inserting DOM Elements</h3>
+                <p>Khởi tạo phần tử ảnh động bằng jQuery và chèn vào trước <code>.panel</code> thông qua <code>insertBefore()</code>.</p>
+                <a class="btn-primary" href="lab10-walkthrough05.html" target="_blank">Mở bài thực hành</a>
+            </article>
+            <article class="ex-card">
+                <span class="ex-badge">Exercise 10.6</span>
+                <h3>Simple jQuery Animation</h3>
+                <p>Điều khiển hiệu ứng hiển thị ảnh với các nút <code>fadeIn</code>, <code>fadeOut</code>, <code>fadeToggle</code>, <code>slideDown</code>, <code>slideUp</code> và <code>slideToggle</code>.</p>
+                <a class="btn-primary" href="lab10-walkthrough06.html" target="_blank">Mở bài thực hành</a>
+            </article>
+            <article class="ex-card">
+                <span class="ex-badge">Exercise 10.7</span>
+                <h3>More jQuery Animation</h3>
+                <p>Tạo hộp xem trước ảnh kích thước lớn theo tọa độ con trỏ chuột kèm chú thích khi rê chuột vào ảnh thu nhỏ.</p>
+                <a class="btn-primary" href="lab10-walkthrough07.html" target="_blank">Mở bài thực hành</a>
+            </article>
+            <article class="ex-card">
+                <span class="ex-badge">Exercise 10.8</span>
+                <h3>Complex Animations</h3>
+                <p>Xây dựng chuỗi hoạt ảnh liên hoàn bằng <code>.animate()</code> thay đổi vị trí <code>left</code>, <code>top</code>, độ mờ <code>opacity</code> và chiều cao <code>height</code>.</p>
+                <a class="btn-primary" href="lab10-walkthrough08.html" target="_blank">Mở bài thực hành</a>
+            </article>
+            <article class="ex-card">
+                <span class="ex-badge">Exercise 10.9</span>
+                <h3>GET Requests</h3>
+                <p>Gọi API bất đồng bộ bằng <code>$.get()</code> và duyệt dữ liệu JSON trả về bằng <code>$.each()</code> để hiển thị danh sách thành phố.</p>
+                <a class="btn-primary" href="lab10-walkthrough09.html" target="_blank">Mở bài thực hành</a>
+            </article>
+            <article class="ex-card">
+                <span class="ex-badge">Exercise 10.10</span>
+                <h3>jqXHR Handling</h3>
+                <p>Quản lý vòng đời truy vấn AJAX qua đối tượng <code>jqXHR</code> với <code>.done()</code>, <code>.fail()</code>, <code>.always()</code> và biểu tượng loading.</p>
+                <a class="btn-primary" href="lab10-walkthrough10.html" target="_blank">Mở bài thực hành</a>
+            </article>
+        </div>
+    </main>
+
+    <footer class="sub-footer">
+        <div class="container">
+            <a href="../Lab09/index.html">&larr; Trước đó: Lab 09</a> &bull;
+            <a href="../index.html">Trang chủ JavaScript-Labs &rarr;</a>
+        </div>
+    </footer>
+</body>
+</html>

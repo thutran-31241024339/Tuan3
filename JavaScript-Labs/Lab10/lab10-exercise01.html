@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Lab 10 - Exercise 10.1 (Set Up jQuery)</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/lab10.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+        window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js"><\/script>');
+    </script>
+</head>
+<body>
+<div class="container" style="margin-top: 24px;">
+    <div id="jqueryStatus" class="alert alert-info">Đang kiểm tra thư viện jQuery...</div>
+    <div class="row" id="first">
+        <h1 id="pageTitle">DOM Example (Exercise 10.1)</h1>
+        <p>This is a sample file verifying jQuery CDN and local fallback setup.</p>
+        <p><textarea class="form-control" rows="3" id="msgArea" placeholder="Messages will show up here"></textarea></p>
+    </div>
+</div>
+<script>
+    $(function () {
+        $("#jqueryStatus")
+            .removeClass("alert-info")
+            .addClass("alert-success")
+            .html("<strong>Thành công!</strong> Đã nạp thư viện jQuery phiên bản <code>" + $.fn.jquery + "</code> (hỗ trợ CDN &amp; fallback nội bộ <code>js/jquery-3.1.1.min.js</code>).");
+    });
+</script>
+</body>
+</html>
